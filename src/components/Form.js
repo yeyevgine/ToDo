@@ -25,7 +25,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
                     type="text"
                     className="todo-input"
                     placeholder="Write here"
-                    maxLength={14}
+                    maxLength={54}
                     helperText={inputText.length > 54 ? 'Task content can contain max 54 characters.' : ''}
 
                 />
