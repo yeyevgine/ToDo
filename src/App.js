@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-//import components
 import Form from './components/Form';
 import ToDoList from './components/ToDoList';
 
 function App() {
 
-  //state Stuff
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
@@ -15,7 +13,6 @@ function App() {
 
   const [filteredTodos, setFilteredTodos] = useState([]);
 
-  //run once when the app start
   useEffect(() => {
     getLocalTodos();
   }, []);
